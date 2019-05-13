@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar{
+  height: 5vh;
+  background-color: aqua;
+}
+
+.animation{
+  height: 50vh;
+  background-color: darkgreen;
+}
+
+.about-me{
+  height: 40vh;
+  background-color: blueviolet;
+}
+
+.skills{
+  height: 10vh;
+  background-color: white;
+}
+
+.projects{
+  height: 50vh;
+  background-color: black;
+}
+
+.contact{
+  height: 20vh;
+  background-color: aqua;
+}
+
+.animation{
+  text-align: center;
+}
+
+.text{
+  font-size: 2rem;
+  position: relative;
+}
+
+.text::after{
+  border-right: solid red;
+  position: absolute;
+}
+
+.interest {
+  width: 50vw;
+  background-color: grey;
+  height: 100vh;
+}
+
