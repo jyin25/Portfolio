@@ -1,26 +1,47 @@
-body{
+*  {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+
+
 }
 
 .nav-bar{
   height: 5vh;
-  background-color: aqua;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.nav-bar ul{
+  margin-top: .8em;
+  margin-right: 1rem;
+}
+
+.nav-bar li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: .8rem;
 }
 
 .animation{
   height: 50vh;
-  background-color: darkgreen;
 }
 
 .about-me{
-  height: 40vh;
-  background-color: blueviolet;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-left: 10%;
+  padding-right: 10%;
+  white-space: pre-line;
+  line-height: 1.5
+
 }
 
 .skills{
   height: 10vh;
-  background-color: white;
 }
 
 .projects{
@@ -30,7 +51,6 @@ body{
 
 .contact{
   height: 20vh;
-  background-color: aqua;
 }
 
 .animation{
@@ -45,6 +65,19 @@ body{
 .text::after{
   border-right: solid red;
   position: absolute;
+  height: 100%;
+  width: 1px;
+  content: "";
+  animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+  0%{
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 .interest {
@@ -53,3 +86,39 @@ body{
   height: 100vh;
 }
 
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.icon img{
+  height: 3rem;
+}
+
+.about-me-container {
+  border: 1px red solid;
+  height: 80%;
+  margin-top: 1rem;
+  width: 30%;
+
+}
+
+.contact {
+  text-align: center;
+
+}
+
+.contact li {
+  display: inline-block;
+}
+
+.contact img {
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+}

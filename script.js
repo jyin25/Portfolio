@@ -1,31 +1,39 @@
-const typedWords = ['Full Stack Developer'];
-countIndex = 0;
-countChara = 0;
-word = '';
-iternateword = '';
+
+const STORE = {
+  typeFunction: {
+    typedWords: ['Full Stack Developer'],
+    countIndex: 0,
+    countChara: 0,
+    word: '',
+    iternateword: ''
+  }
+};
+
 
 (function type() {
-    if (countIndex === typedWords.length) {
-        countIndex = 0;
-    }
-    
-    word = typedWords[countIndex];
-    iternateword = word.slice(0, ++countChara);
+  const selectTypeFunc = STORE.typeFunction;
 
-    document.querySelector('.text').textContent = iternateword;
-    if (countChara === word.length) {
-        countIndex++;
-        countChara = 0;
-    }
-    setTimeout(type, 400);
+  if (selectTypeFunc.countIndex === selectTypeFunc.typedWords.length) {
+    selectTypeFunc.countIndex = 0;
+  }
+    
+  selectTypeFunc.word = selectTypeFunc.typedWords[selectTypeFunc.countIndex];
+  selectTypeFunc.iternateword = selectTypeFunc.word.slice(0, ++selectTypeFunc.countChara);
+
+  document.querySelector('.text').textContent = selectTypeFunc.iternateword;
+  if (selectTypeFunc.countChara === selectTypeFunc.word.length) {
+    selectTypeFunc.countIndex++;
+    selectTypeFunc.countChara = 0;
+  }
+  setTimeout(type, 400);
 })();
 
 function fadeInBox() {
-    $('.about-me').hover(function() {
-        $(this).find('div').addClass('interest');
+  $('.about-me').hover(function() {
+    $(this).find('div').addClass('');
         
 
-    })
+  })
 }
 
 $(fadeInBox);
