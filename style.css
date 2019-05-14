@@ -36,7 +36,7 @@
   padding-left: 10%;
   padding-right: 10%;
   white-space: pre-line;
-  line-height: 1.5
+  line-height: 1.5;
 
 }
 
@@ -94,10 +94,11 @@
 
 .icon {
   display: inline-block;
+  height: 100%;
 }
 
 .icon img{
-  height: 3rem;
+  height: 100%;
 }
 
 .about-me-container {
@@ -121,4 +122,48 @@
   height: 50px;
   width: 50px;
   margin: 30px;
+}
+
+.projects {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.project-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(106, 177, 201);
+}
+
+.projects:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 1.5
 }

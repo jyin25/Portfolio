@@ -37,3 +37,9 @@ function fadeInBox() {
 }
 
 $(fadeInBox);
+
+(function hoverProject(){
+  $('.projects').find('img').hover(function(event) {
+    $(this).addClass('overlay');
+  })
+})();
