@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-bar {
+  height: 5vh;
+  min-height: 50px;
+  background-color: #444;
+}
+
+.nav-bar li{
+  color: white;
+}
+
+.animation {
+  height: 50vh;
+  background-color: #bbb;
+}
+
+
+
+.about-me {
+  height: 60vh;
+  min-height: 500px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.about-me-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 2%;
+
+}
+
+.skills{
+  height: 10vh;
+  background-color: #bbb;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.logo {
+  background-color: #ddd;
+  color: black;
+}
+
+.projects{
+  height: 50vh;
+  background-color: #ddd;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: 10%;
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-container {
+  border: 1px black solid;
+  background-color: #bbb;
+  width: 15rem;
+}
+
+.contact {
+  height: 20vh;
+  background-color: #aaa;
+  display: flex;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.contact li {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #ddd;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 320px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-container {
+    font-size: 2em;
+    border: 1px solid black;
+  }
+}
+
+
+@media only screen and (max-width: 2000px) and (min-width: 1001px) {
+
+  .about-me-container {
+    font-size: 2em;
+    border: 1px solid black;
+    padding: 1%;
+    width: 30%;
+  }
+}
+
