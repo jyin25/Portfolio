@@ -9,6 +9,14 @@
   height: 5vh;
   min-height: 50px;
   background-color: #444;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-flex{
+  margin: auto 1rem auto 0;
 }
 
 .nav-bar li{
@@ -37,7 +45,6 @@
   margin-bottom: 20px;
   border: 1px solid black;
   padding: 2%;
-
 }
 
 .skills{
@@ -59,8 +66,8 @@
   background-color: #ddd;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
   display: flex;
   justify-content: center;
 }
@@ -96,6 +103,11 @@
   .about-me-container {
     font-size: 2em;
     border: 1px solid black;
+    width: 100%;
+  }
+
+  .project-container {
+    width: 100%
   }
 }
 
@@ -105,8 +117,11 @@
   .about-me-container {
     font-size: 2em;
     border: 1px solid black;
-    padding: 1%;
     width: 30%;
+  }
+
+  .project-container {
+    width: 30%
   }
 }
 
