@@ -12,7 +12,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  flex-direction: row;
 }
 
 .nav-flex{
@@ -21,14 +20,14 @@
 
 .nav-bar li{
   color: white;
+  margin-right: 1rem;
+  display: inline-block;
 }
 
 .animation {
-  height: 50vh;
+  height: 60vh;
   background-color: #bbb;
 }
-
-
 
 .about-me {
   height: 60vh;
@@ -48,17 +47,23 @@
 }
 
 .skills{
-  height: 10vh;
+  height: 5rem;
   background-color: #bbb;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   padding-top: .5rem;
   padding-bottom: .5rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .logo {
   background-color: #ddd;
   color: black;
+  height: 100%;
 }
 
 .projects{

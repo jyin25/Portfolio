@@ -1,21 +1,21 @@
-*  {
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-
-
+  text-align: center;
 }
 
-.nav-bar{
+.nav-bar {
   height: 5vh;
   min-height: 50px;
+  background-color: #444;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
+  align-items: center;
 }
+
 .nav-bar ul{
-  margin-top: .8em;
-  margin-right: 1rem;
+  margin: auto 1rem auto 0;
 }
 
 .nav-bar li {
@@ -24,28 +24,62 @@
   font-size: .8rem;
 }
 
-.animation{
-  height: 50vh;
+.nav-bar a {
+  color: white;
 }
 
-.about-me{
+.animation {
   height: 60vh;
+  background-color: #bbb;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-left: 10%;
-  padding-right: 10%;
-  white-space: pre-line;
-  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+}
 
+.about-me {
+  height: 60vh;
+  min-height: 500px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: space-around;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.about-me-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 2%;
 }
 
 .skills{
-  height: 10vh;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo {
+  height: 100%;
+  width: 5rem;
+}
+
+.logo img {
+  height: 100%;
 }
 
 .projects{
-  height: 50vh;
+  height: 25rem;
   background-color: black;
 }
 
@@ -53,9 +87,6 @@
   height: 20vh;
 }
 
-.animation{
-  text-align: center;
-}
 
 .text{
   font-size: 2rem;
@@ -101,13 +132,6 @@
   height: 100%;
 }
 
-.about-me-container {
-  border: 1px red solid;
-  height: 80%;
-  margin-top: 1rem;
-  width: 30%;
-
-}
 
 .contact {
   text-align: center;
@@ -166,4 +190,36 @@
   transform: translate(-50%, -50%);
   text-align: center;
   line-height: 1.5
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 320px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-container {
+    font-size: 2em;
+    border: 1px solid black;
+    width: 100%;
+  }
+
+  .project-container {
+    width: 100%
+  }
+}
+
+
+@media only screen and (max-width: 2000px) and (min-width: 1001px) {
+
+  .about-me-container {
+    font-size: 2em;
+    border: 1px solid black;
+    width: 30%;
+  }
+
+  .project-container {
+    width: 40%
+  }
 }
