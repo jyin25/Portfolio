@@ -1,7 +1,7 @@
 
 const STORE = {
   typeFunction: {
-    typedWords: ['Full Stack Developer'],
+    typedWords: ['Front-End Developer'],
     countIndex: 0,
     countChara: 0,
     word: '',
@@ -26,20 +26,4 @@ const STORE = {
     selectTypeFunc.countChara = 0;
   }
   setTimeout(type, 400);
-})();
-
-function fadeInBox() {
-  $('.about-me').hover(function() {
-    $(this).find('div').addClass('');
-        
-
-  })
-}
-
-$(fadeInBox);
-
-(function hoverProject(){
-  $('.projects').find('img').hover(function(event) {
-    $(this).addClass('overlay');
-  })
 })();
