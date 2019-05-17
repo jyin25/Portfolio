@@ -58,7 +58,7 @@
 }
 
 .about-me h1{
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-family: 'Cantata One', serif;
@@ -76,7 +76,7 @@
   padding: 2%;
   border-top-right-radius: 35px;
   background-color: #F2F2F2;
-  
+  width: 100%
 }
 
 .about-me-container h1 {
@@ -88,7 +88,7 @@
 
 .about-me-container li {
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.8rem;
   color: #334E68;
   font-family: 'Mukta', sans-serif;
@@ -205,7 +205,7 @@
 .projects {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 4rem;
+  padding-top: 1rem;
   padding-bottom: 4rem;
   display: flex;
   justify-content: center;
@@ -222,6 +222,7 @@
   justify-content: center;
   position: relative;
   box-shadow: 5px 10px 30px #063d67;
+  margin-top: 2rem;
 }
 
 .projects h1 {
@@ -271,17 +272,52 @@
   font-family: 'Mukta', sans-serif;
 }
 
-@media only screen and (max-width: 500px) and (min-width: 320px) {
-  .nav-bar li {
-    font-size: 1.1rem;
+.changing-color {
+  -webkit-animation:colorchange 5s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    
+    color: #bd760c;
+  }
+  
+  20% {
+    
+    color: #8e44ad;
+  }
+  
+  40% {
+    
+    color: #b5d428;
+  }
+  
+  60% {
+    
+    color: #d35400;
   }
 
-  .animation h1 {
-    font-size: 2.5rem;
+  80% {
+    color: rgb(236, 10, 180);
   }
 
-  .text {
+  100% {
+    color: rgb(10, 33, 238);
+  }
+
+}
+
+@media only screen and (max-width: 399px) {
+  .nav-bar li, .about-me-container li, .projects p {
+    font-size: 1rem;
+  }
+
+  .animation h1, .skills h1, .about-me>h1, .projects h1, .contact h1 {
     font-size: 2rem;
+  }
+
+  .text, .about-me-container h1 {
+    font-size: 1.5rem;
   }
 
   .text::after {
@@ -294,32 +330,48 @@
     height: 100%;
   }
 
-  .about-me-container li {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 699px) and (min-width: 400px) {
+  .nav-bar li, .about-me-container li, .projects p {
+    font-size: 1.1rem;
+  }
+
+  .animation h1, .skills h1, .about-me>h1, .projects h1, .contact h1 {
+    font-size: 2rem;
+  }
+
+  .text, .about-me-container h1 {
     font-size: 1.5rem;
   }
 
   .about-me-container h1 {
-    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
 
-  .skills h1 {
-    font-size: 2rem;
+  .text::after {
+    border-right: solid red;
+    height: 7%;
   }
 
-  .about-me h1 {
-    font-size: 2.5rem;
-  }
-
-  .project h1 {
-    font-size: 2.5rem;
-  }
-
-  .project p {
-    font-size: 2rem;
-  }
-
-  .contact h1 {
-    font-size: 2.5rem;
+  .logo img{
+    width: 80%;
+    height: 100%;
   }
 
   .flex-container {
@@ -328,61 +380,144 @@
     align-items: center;
   }
 
-  .about-me-container {
-    font-size: 2em;
-    width: 100%;
-  }
-
-  .project-container {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
   .project-container img{
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
 
   .overlay {
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 501px) {
+@media only screen and (max-width: 899px) and (min-width: 700px) {
+  .nav-bar li, .about-me-container li, .projects p {
+    font-size: 1.5rem;
+  }
+
+  .text, .skills h1, .about-me>h1, .projects h1, .contact h1 {
+    font-size: 2rem;
+  }
+
+  .animation h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-me-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-me-container h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .about-me-container {
+    width: 80%;
+  }
+
+  .text::after {
+    border-right: solid red;
+    height: 10%;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .about-me-container {
-    font-size: 2em;
-    width: 100%;
-  }
-
-  .project-container {
-    width: 100%;
-    margin-top: 2rem;
-  }
-
   .project-container img{
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
 
   .overlay {
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
 }
 
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+  .nav-bar li, .about-me-container li, .projects p {
+    font-size: 1.5rem;
+  }
 
-@media only screen and (max-width: 2000px) and (min-width: 1001px) {
+  .skills h1, .about-me>h1, .projects h1, .contact h1 {
+    font-size: 2rem;
+  }
+
+  .animation h1 {
+    font-size: 2.5rem;
+  }
+
+  .text {
+    font-size: 2.2rem;
+  }
+
+  .about-me-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
 
   .about-me-container {
-    font-size: 2em;
+    width: 80%;
+  }
+
+  .text::after {
+    border-right: solid red;
+    height: 11%;
+  }
+
+  .logo img{
+    width: 80%;
+    height: 100%;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1101px) {
+  .neutral-color {
+    font-size: 1.3rem;
+  }
+
+  .about-me-container li{
+    font-size: 1.5rem;
+  }
+
+  .about-me-container {
     width: 30%;
+  }
+
+  .about-me-container h1 {
+    font-size: 1.7rem;
+  }
+
+  .animation h1 {
+    font-size: 3rem;
+  }
+
+  .text {
+    font-size: 2.5rem;
+  }
+
+  .flex-container {
+    line-height: 1;
   }
 
   .project-container {
@@ -393,5 +528,29 @@
   .project-container img{
     width: 100%;
   }
+
+  .text::after {
+    border-right: solid red;
+    height: 14%;
+  }
 }
 
+@media only screen and (min-width: 1501px) {
+  .about-me-container {
+    width: 30%;
+  }
+
+  .about-me-container li{
+    font-size: 1.5rem;
+  }
+
+  .neutral-color {
+    font-size: 1.3rem;
+  }
+
+  .about-me-container h1 {
+    font-size: 1.7rem;
+  }
+
+
+}
