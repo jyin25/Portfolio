@@ -24,7 +24,7 @@
 }
 
 .nav-bar a {
-  color: black;
+  color: #334E68;
   text-decoration: none;
 }
 
@@ -67,6 +67,7 @@
 .flex-container {
   display: flex;
   justify-content: space-around;
+  line-height: 1.4;
 }
 
 .about-me-container {
@@ -75,7 +76,6 @@
   padding: 2%;
   border-top-right-radius: 35px;
   background-color: #F2F2F2;
-  list-style: none;
   
 }
 
@@ -92,6 +92,7 @@
   font-size: 1.8rem;
   color: #334E68;
   font-family: 'Mukta', sans-serif;
+  list-style: none;
 }
 
 .about-me-container p {
@@ -101,7 +102,6 @@
 
 .neutral-color {
   color: #829AB1;
-  line-height: 1.5;
 }
 
 .skills{
@@ -233,6 +233,7 @@
 
 .projects p {
   font-family: 'Noto Serif JP', serif;
+  font-weight: 800;
 }
 
 .overlay {

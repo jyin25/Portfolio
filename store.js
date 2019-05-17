@@ -99,7 +99,7 @@ function renderHTML () {
   renderLogo();
   renderProject();
   renderContactMe();
-  renderAboutMe();
+  
 }
 
 $(renderHTML);
