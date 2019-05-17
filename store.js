@@ -62,7 +62,7 @@ function renderLogo () {
     `<div class="logo">
         <img src="${x}" alt="">
             </div>`).join('');
-  const logosfi = `<h1>Skills</h1> <div class="logo-container">${logo}</div>`;
+  const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container">${logo}</div>`;
   $('.skills').html(logosfi);
 }
 
@@ -81,6 +81,7 @@ function renderProject () {
   $('.projects').html(`
   <h1>PORTFOLIO</h1>
   <p>HOVER OVER THEM FOR MORE INFORMATION</P>
+  <div class="color-line"></div>
   <div class="project-container"> ${projHtml} </div>`);
 
 }

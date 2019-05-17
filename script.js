@@ -25,3 +25,12 @@ const STORE = {
   }
   setTimeout(type, 250);
 })();
+
+(function clickProject () {
+  $('.projects').on('click', '.overlay', function() {
+    $(this).closest('.projects').addClass('project-overlay');
+  })
+})();
+
+
+
