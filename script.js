@@ -1,14 +1,12 @@
-
 const STORE = {
   typeFunction: {
-    typedWords: ['Front-End Developer'],
+    typedWords: [`Front-End Developer`],
     countIndex: 0,
     countChara: 0,
     word: '',
     iternateword: ''
   }
 };
-
 
 (function type() {
   const selectTypeFunc = STORE.typeFunction;
@@ -25,5 +23,5 @@ const STORE = {
     selectTypeFunc.countIndex++;
     selectTypeFunc.countChara = 0;
   }
-  setTimeout(type, 400);
+  setTimeout(type, 250);
 })();

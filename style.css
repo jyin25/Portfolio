@@ -6,9 +6,8 @@
 }
 
 .nav-bar {
-  height: 5vh;
-  min-height: 50px;
-  background-color: #444;
+  height: 4rem;
+  background-color: #E2E2E2;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -21,17 +20,14 @@
 .nav-bar li {
   display: inline-block;
   margin-left: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .nav-bar a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
-.nav-bar a:hover {
-  background-color: #111;
-}
 
 .animation {
   height: 60vh;
@@ -39,6 +35,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url('https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy%E2%80%A6,w_2000,f_auto,q_auto/9621/a4011e77-0e25-416f-ab13-d3840a5664e3_kssoov.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  flex-direction: column;
+}
+
+.animation h1 {
+  font-family: 'Cantata One', serif;
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 3rem;
 }
 
 .about-me {
@@ -49,10 +56,12 @@
   padding-left: 5%;
   flex-direction: column;
 }
+
 .about-me h1{
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  font-family: 'Cantata One', serif;
 }
 
 .flex-container {
@@ -73,14 +82,16 @@
 .about-me-container h1 {
   text-align: left;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .about-me-container li {
   text-align: left;
   margin-bottom: 2rem;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   color: #334E68;
+  font-family: 'Mukta', sans-serif;
 }
 
 .about-me-container p {
@@ -94,14 +105,13 @@
 }
 
 .skills{
-  height: 10rem;
+  height: 12rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
   justify-content: space-around;
   margin-top: 2rem;
+  background: -webkit-linear-gradient(left,#78f0d2,#84b5da);
 }
 
 .logo-container {
@@ -123,7 +133,7 @@
 
 .contact{
   height: 100%;
-  background-color: rgb(68, 68, 68);
+  background-color: #26262a;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: .5rem;
@@ -143,17 +153,20 @@
   color: white;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  font-family: 'Cantata One', serif;
 }
 
 .text{
-  font-size: 2rem;
-  position: relative;
+  font-size: 4.5rem;
+
+  color: white;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .text::after{
   border-right: solid red;
   position: absolute;
-  height: 100%;
+  height: 15%;
   width: 1px;
   content: "";
   animation: blink 0.7s infinite ease;
@@ -177,6 +190,8 @@
 .skills h1 {
   margin-bottom: 2rem;
   font-size: 2.5rem;
+  font-family: 'Cantata One', serif;
+  color: white;
 }
 
 .icon {
@@ -191,7 +206,7 @@
 .projects {
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 1rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   display: flex;
   justify-content: center;
@@ -199,7 +214,6 @@
   align-items: center;
   height: 100%;
   color: black;
-  background-color: #E2E2E2;
   font-size: 1.5rem;
 }
 
@@ -208,11 +222,17 @@
   display: flex;
   justify-content: center;
   position: relative;
+  box-shadow: 5px 10px 30px #063d67;
 }
 
 .projects h1 {
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
   font-size: 2.5rem;
+  font-family: 'Cantata One', serif;
+}
+
+.projects p {
+  font-family: 'Noto Serif JP', serif;
 }
 
 .overlay {
@@ -244,9 +264,12 @@
 
 .overlay-text h2 {
   margin-top: 3rem;
+  font-family: 'Noto Serif JP', serif;
 }
 
-
+.overlay-text p {
+  font-family: 'Mukta', sans-serif;
+}
 
 @media only screen and (max-width: 1000px) and (min-width: 320px) {
   .flex-container {
@@ -274,7 +297,6 @@
     width: 90%;
     height: 100%;
   }
-
 }
 
 
@@ -294,3 +316,4 @@
     width: 100%;
   }
 }
+
