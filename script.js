@@ -29,20 +29,17 @@ const STORE = {
 function clickProject () {
   $('.container').on('click', '.overlay', function () {
     $(this).closest('.project-container').find('.modal').css('display', 'flex');
+    $(this).closest('.container').css('position', 'fixed');
   })
 };
 
 function clickClose () {
   $('.container').on('click', '.close', function () {
     $(this).closest('.project-container').find('.modal').css('display', 'none');
+    $(this).closest('.container').css('position', '');
   })
 };
 
-function clickCloses () {
-  $('.container').on('click', '.close', function () {
-    $(this).closest('.project-container').find('.modal').css('display', 'none');
-  })
-};
 
 function renderPage () {
   clickProject();

@@ -30,6 +30,7 @@
 .nav-bar a {
   color: #334E68;
   text-decoration: none;
+  font-family: Mukta, sans-serif;
 }
 
 
@@ -156,6 +157,7 @@
 
 .contact li {
   display: inline-block;
+  border-radius: 5px;
 }
 
 .contact img {
@@ -332,56 +334,71 @@
 
 .modal {
   position: fixed;
-  background: rgba(46,46,46,.98);
+  background: rgba(46,46,46,.80);
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
   display: none ;
-  display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .modal-content {
-  height: 400px;
+  max-height: 600px;
   overflow: auto;
-  width: 50%;
-  padding: 1rem 2rem 1rem 2rem;
-}
-
-.button-container {
-  display: flex;
+  width: 40%;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
 }
 
 .close {
-  position: absolute;
   right: 430px;
   font-size: 5rem;
   transform: rotate(45deg);
-  color: #01A9DB;
+  color: rgb(17, 214, 221);
+}
+
+.modal-text {
+  height: 100%;
+  width: 100%;
+  margin-top: 5rem;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.button-container {
+  position: absolute;
+  background-color: #334E68;
+  border-bottom-left-radius: 5px;
+  right: 0;
 }
 
 .modal-text h1 {
-  color: white;
+  color: black;
+  font-family: 'Cantata One', serif;
 }
 
 .modal-text h2 {
   margin-top: 3rem;
   font-family: 'Noto Serif JP', serif;
-  color: white;
+  color: #334E68;
 }
 
 .modal-text p {
   font-family: 'Mukta', sans-serif;
-  color: #01A9DB;
+  color: rgb(93, 132, 168);
 }
 
 .modal-text img {
   width: 25rem;
   height: 25rem;
 }
+
+
 
 @media only screen and (max-width: 399px) {
   .nav-bar li, .about-me-container li, .projects p {

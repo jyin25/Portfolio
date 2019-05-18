@@ -92,10 +92,10 @@ function renderProject () {
   </div>
   <div class="modal">
     <div class="modal-content">
+    <div class="button-container">
+    <div class="close">+</div>
+  </div>
       <div class="modal-text">
-        <div class="button-container">
-          <div class="close">+</div>
-        </div>
             <h1>${key.appName}</h1>
             <h2>${key.title}</h2>
             <p>${key.paragraph}</p>
