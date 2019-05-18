@@ -258,11 +258,18 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: rgb(106, 177, 201);
+  background-color: rgba(106, 177, 201,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay p {
+  opacity: 1;
 }
 
 .project-container:hover .overlay {
-  opacity: 1;
+  opacity: .5;
 }
 
 .overlay-text {
@@ -325,11 +332,55 @@
 
 .modal {
   position: fixed;
-  background-color: rgba(0,0,0,.5);
+  background: rgba(46,46,46,.98);
   height: 100%;
   width: 100%;
   top: 0;
-  display: none;
+  left: 0;
+  right: 0;
+  display: none ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  height: 400px;
+  overflow: auto;
+  width: 50%;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.button-container {
+  display: flex;
+}
+
+.close {
+  position: absolute;
+  right: 430px;
+  font-size: 5rem;
+  transform: rotate(45deg);
+  color: #01A9DB;
+}
+
+.modal-text h1 {
+  color: white;
+}
+
+.modal-text h2 {
+  margin-top: 3rem;
+  font-family: 'Noto Serif JP', serif;
+  color: white;
+}
+
+.modal-text p {
+  font-family: 'Mukta', sans-serif;
+  color: #01A9DB;
+}
+
+.modal-text img {
+  width: 25rem;
+  height: 25rem;
 }
 
 @media only screen and (max-width: 399px) {
@@ -557,6 +608,10 @@
   .text::after {
     border-right: solid red;
     height: 14%;
+  }
+
+  .overlay-container {
+    position: relative;
   }
 }
 

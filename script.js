@@ -26,14 +26,27 @@ const STORE = {
   setTimeout(type, 250);
 })();
 
-(function clickProject () {
+function clickProject () {
   $('.container').on('click', '.overlay', function () {
-    $(this).closest('.projects').find('.modal').css('display', 'flex');
+    $(this).closest('.project-container').find('.modal').css('display', 'flex');
   })
-});
+};
 
-(function clickClose () {
+function clickClose () {
   $('.container').on('click', '.close', function () {
-    $(this).closest('.projects').find('.modal').css('display', 'none');
+    $(this).closest('.project-container').find('.modal').css('display', 'none');
   })
-});
+};
+
+function clickCloses () {
+  $('.container').on('click', '.close', function () {
+    $(this).closest('.project-container').find('.modal').css('display', 'none');
+  })
+};
+
+function renderPage () {
+  clickProject();
+  clickClose();
+}
+
+$(renderPage);

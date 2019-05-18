@@ -33,7 +33,24 @@ const STOREHTML = {
       paragraph: `Simpson Quiz app is created to test your knowledge on the characters from the cartoon The Simpsons.`,
       title2: 'Technologies Used',
       technologies: 'HTML, CSS, jQuery',
-      alt: `Homer eating donut`
+      alt: `Homer eating donut`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jyin25/quiz-app',
+      live: 'https://jyin25.github.io/quiz-app/',
+      screenshot: 'Quiz app picture.png'
+    },
+    {
+      appName: 'asdfp',
+      img: 'https://img.maximummedia.ie/joe_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE4XFxcLzAzXFxcLzA5MTIxNDAzXFxcL2hvbWVyLXNpbXBzb24uanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5pZVxcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZVxcXC9uby1pbWFnZS5wbmc_aWQ9MjY0YTJkYmUzNzBmMmM2NzVmY2RcIixcIm9wdGlvbnNcIjpbXX0iLCJoYXNoIjoiZTM1MzgwZTM4OWRjNGQyNjBhN2I0NDE3ZjdlMmM1ZWE5NDE0MjM4MyJ9/homer-simpson.jpg',
+      title: 'Overview',
+      paragraph: `Simpson Quiz app is created to test your knowledge on the characters from the cartoon The Simpsons.`,
+      title2: 'Technologies Used',
+      technologies: 'HTML, CSS, jQuery',
+      alt: `Homer eating donut`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jyin25/quiz-app',
+      live: 'https://jyin25.github.io/quiz-app/',
+      screenshot: 'Quiz app picture.png'
     }
   ],
   contact: [{
@@ -70,21 +87,27 @@ function renderProject () {
   const projHtml = STOREHTML.projects.map(key => `
   <img src=${key.img} alt="${key.alt}">
   <div class="overlay">
-    <div class="overlay-text">
-      <h1>${key.appName}</h1>
-      <h2>${key.title}</h2>
-      <p>${key.paragraph}</p>
-      <h2>${key.title2}</h2>
-      <p>${key.technologies}</p>
+  <p>CLICK ME</p>
+  </div>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="modal-text">
+        <div class="button-container">
+          <div class="close">+</div>
+        </div>
+            <h1>${key.appName}</h1>
+            <h2>${key.title}</h2>
+            <p>${key.paragraph}</p>
+            <h2>${key.title2}</h2>
+            <p>${key.technologies}</p>
+            <h2>${key.title3}</h2>
+            <p>${key.repo}</p>
+            <a href="${key.live}"><img src="${key.screenshot}" alt=""></a>
+      </div>
     </div>
-  </div>`);
-
+  </div>`).join('');
 
   $('.projects').html(`
-  <div class="modal">
-    <div  class="modal-content">
-    </div>
-  </div>
   <h1>PORTFOLIO</h1>
   <p>HOVER OVER THEM FOR MORE INFORMATION</P>
   <div class="color-line"></div>
