@@ -27,10 +27,13 @@ const STORE = {
 })();
 
 (function clickProject () {
-  $('.projects').on('click', '.overlay', function() {
-    $(this).closest('.projects').addClass('project-overlay');
+  $('.container').on('click', '.overlay', function () {
+    $(this).closest('.projects').find('.modal').css('display', 'flex');
   })
-})();
+});
 
-
-
+(function clickClose () {
+  $('.container').on('click', '.close', function () {
+    $(this).closest('.projects').find('.modal').css('display', 'none');
+  })
+});

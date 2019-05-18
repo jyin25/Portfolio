@@ -78,12 +78,17 @@ function renderProject () {
       <p>${key.technologies}</p>
     </div>
   </div>`);
+
+
   $('.projects').html(`
+  <div class="modal">
+    <div  class="modal-content">
+    </div>
+  </div>
   <h1>PORTFOLIO</h1>
   <p>HOVER OVER THEM FOR MORE INFORMATION</P>
   <div class="color-line"></div>
   <div class="project-container"> ${projHtml} </div>`);
-
 }
 
 function renderContactMe () {
