@@ -85,6 +85,7 @@ function renderLogo () {
 
 function renderProject () {
   const projHtml = STOREHTML.projects.map(key => `
+  <div class="project-container">
   <img src=${key.img} alt="${key.alt}">
   <div class="overlay">
   <p>CLICK ME</p>
@@ -105,13 +106,14 @@ function renderProject () {
             <a href="${key.live}"><img src="${key.screenshot}" alt=""></a>
       </div>
     </div>
+  </div>
   </div>`).join('');
 
   $('.projects').html(`
   <h1>PORTFOLIO</h1>
   <p>HOVER OVER THEM FOR MORE INFORMATION</P>
   <div class="color-line"></div>
-  <div class="project-container"> ${projHtml} </div>`);
+   ${projHtml}`);
 }
 
 function renderContactMe () {
