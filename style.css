@@ -177,6 +177,7 @@
   font-size: 4.5rem;
   color: white;
   font-family: 'Noto Serif JP', serif;
+  width: 100%;
 }
 
 .text::after{
