@@ -38,19 +38,6 @@ const STOREHTML = {
       repo: 'https://github.com/jyin25/quiz-app',
       live: 'https://jyin25.github.io/quiz-app/',
       screenshot: 'Quiz app picture.png'
-    },
-    {
-      appName: 'asdfp',
-      img: 'https://img.maximummedia.ie/joe_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE4XFxcLzAzXFxcLzA5MTIxNDAzXFxcL2hvbWVyLXNpbXBzb24uanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5pZVxcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZVxcXC9uby1pbWFnZS5wbmc_aWQ9MjY0YTJkYmUzNzBmMmM2NzVmY2RcIixcIm9wdGlvbnNcIjpbXX0iLCJoYXNoIjoiZTM1MzgwZTM4OWRjNGQyNjBhN2I0NDE3ZjdlMmM1ZWE5NDE0MjM4MyJ9/homer-simpson.jpg',
-      title: 'Overview',
-      paragraph: `Simpson Quiz app is created to test your knowledge on the characters from the cartoon The Simpsons.`,
-      title2: 'Technologies Used',
-      technologies: 'HTML, CSS, jQuery',
-      alt: `Homer eating donut`,
-      title3: 'GitHub Repo',
-      repo: 'https://github.com/jyin25/quiz-app',
-      live: 'https://jyin25.github.io/quiz-app/',
-      screenshot: 'Quiz app picture.png'
     }
   ],
   contact: [{
