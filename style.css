@@ -31,10 +31,21 @@
   color: #334E68;
   text-decoration: none;
   font-family: Mukta, sans-serif;
+  transition: width .3s;
 }
 
-.nav-bar a:hover{
+.nav-bar a:hover::after {
   cursor: hand;
+  width: 100%
+}
+
+.nav-bar a::after {
+  display: block;
+  content: '';
+  transition: width .5s;
+  width: 0;
+  height: 2px;
+  background-color: #01A9DB;
 }
 
 
