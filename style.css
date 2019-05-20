@@ -33,6 +33,10 @@
   font-family: Mukta, sans-serif;
 }
 
+.nav-bar a:hover{
+  cursor: hand;
+}
+
 
 .animation {
   height: 60vh;
@@ -164,6 +168,7 @@
   height: 50px;
   width: 50px;
   margin: 1rem 1rem 1rem 1rem;
+  border-radius: 40px
 }
 
 .contact h1 {
@@ -271,8 +276,9 @@
   opacity: 1;
 }
 
-.project-container:hover .overlay {
-  opacity: .5;
+.project-container .overlay:hover {
+  opacity: .6;
+  cursor: pointer;
 }
 
 .overlay-text {
@@ -335,7 +341,7 @@
 
 .modal {
   position: fixed;
-  background: rgba(46,46,46,.80);
+  background: rgba(36, 34, 34, 0.96);
   height: 100%;
   width: 100%;
   top: 0;
@@ -348,10 +354,9 @@
 }
 
 .modal-content {
-  max-height: 600px;
+  height: 100%;
   overflow: auto;
-  width: 40%;
-  background-color: white;
+  width: 100%;
   position: relative;
   border-radius: 5px;
 }
@@ -378,20 +383,24 @@
   right: 0;
 }
 
+.button-container:hover {
+  cursor: pointer;
+}
+
 .modal-text h1 {
-  color: black;
+  color: white;
   font-family: 'Cantata One', serif;
 }
 
 .modal-text h2 {
   margin-top: 3rem;
-  font-family: 'Noto Serif JP', serif;
-  color: #334E68;
+  font-family: 'Mukta', sans-serif;
+  color: #01A9DB;
 }
 
 .modal-text p {
-  font-family: 'Mukta', sans-serif;
-  color: rgb(93, 132, 168);
+  font-family: 'Noto Serif JP', serif;
+  color: white;
 }
 
 .modal-text img {
@@ -439,6 +448,27 @@
     width: 100%;
     height: 100%;
   }
+
+  .modal-text img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+.modal-text h1 {
+  font-size: 1.5rem;
+  }
+
+.modal-text h2 {
+  font-size: 1.3rem;
+  }
+
+.modal-text p {
+  font-size: .8rem;
+  }
+
+  .close {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (max-width: 699px) and (min-width: 400px) {
@@ -482,6 +512,27 @@
   .overlay {
     width: 100%;
     height: 100%;
+  }
+
+  .modal-text img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+.modal-text h1 {
+  font-size: 2rem;
+  }
+
+.modal-text h2 {
+  font-size: 1.8rem;
+  }
+
+.modal-text p {
+  font-size: .8rem;
+  }
+
+  .close {
+    font-size: 3rem;
   }
 }
 
@@ -530,6 +581,28 @@
     width: 100%;
     height: 100%;
   }
+
+  .modal-text img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .modal-text h1 {
+    font-size: 2rem;
+    }
+  
+  .modal-text h2 {
+    font-size: 1.8rem;
+    }
+  
+  .modal-text p {
+    font-size: 1rem;
+    }
+  
+  .close {
+    font-size: 4rem;
+  }
+
 }
 
 @media only screen and (max-width: 1100px) and (min-width: 900px) {
@@ -583,6 +656,27 @@
     width: 100%;
     height: 100%;
   }
+
+  .modal-text img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .modal-text h1 {
+    font-size: 2rem;
+    }
+  
+  .modal-text h2 {
+    font-size: 1.8rem;
+    }
+  
+  .modal-text p {
+    font-size: 1rem;
+    }
+  
+  .close {
+    font-size: 4rem;
+  }
 }
 
 @media only screen and (max-width: 1500px) and (min-width: 1101px) {
@@ -631,6 +725,27 @@
   .overlay-container {
     position: relative;
   }
+
+  .modal-text img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+    .modal-text h1 {
+    font-size: 2rem;
+    }
+  
+  .modal-text h2 {
+    font-size: 1.8rem;
+    }
+  
+  .modal-text p {
+    font-size: 1rem;
+    }
+  
+  .close {
+    font-size: 4rem;
+  }
 }
 
 @media only screen and (min-width: 1501px) {
@@ -648,6 +763,22 @@
 
   .about-me-container h1 {
     font-size: 1.7rem;
+  }
+
+  .modal-text h1 {
+    font-size: 1.8rem;
+    }
+  
+  .modal-text h2 {
+    font-size: 1.5rem;
+    }
+  
+  .modal-text p {
+    font-size: 1rem;
+    }
+  
+  .close {
+    font-size: 4rem;
   }
 
 

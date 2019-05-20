@@ -98,7 +98,7 @@ function renderProject () {
 
   $('.projects').html(`
   <h1>PORTFOLIO</h1>
-  <p>HOVER OVER THEM FOR MORE INFORMATION</P>
+  <p>CLICK ON THEM FOR MORE INFORMATION</P>
   <div class="color-line"></div>
    ${projHtml}`);
 }
