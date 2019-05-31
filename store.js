@@ -72,7 +72,7 @@ function renderLogo () {
 
 function renderProject () {
   const projHtml = STOREHTML.projects.map(key => `
-  <div class="project-container">
+  <div class="project-container box-shadow">
   <img src=${key.img} alt="${key.alt}">
   <div class="overlay">
   <p>CLICK ME</p>
