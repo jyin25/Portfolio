@@ -26,17 +26,43 @@ const STOREHTML = {
           `https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ilnk4pdjwxtt9o08tcfb`
         ],
   projects: [
+    // {
+    //   appName: 'Simpson Quiz app',
+    //   img: 'https://img.maximummedia.ie/joe_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE4XFxcLzAzXFxcLzA5MTIxNDAzXFxcL2hvbWVyLXNpbXBzb24uanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5pZVxcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZVxcXC9uby1pbWFnZS5wbmc_aWQ9MjY0YTJkYmUzNzBmMmM2NzVmY2RcIixcIm9wdGlvbnNcIjpbXX0iLCJoYXNoIjoiZTM1MzgwZTM4OWRjNGQyNjBhN2I0NDE3ZjdlMmM1ZWE5NDE0MjM4MyJ9/homer-simpson.jpg',
+    //   title: 'Overview',
+    //   paragraph: `Simpson Quiz app is created to test your knowledge on the characters from the cartoon The Simpsons.`,
+    //   title2: 'Technologies Used',
+    //   technologies: 'HTML, CSS, jQuery',
+    //   alt: `Homer eating donut`,
+    //   title3: 'GitHub Repo',
+    //   repo: 'https://github.com/jyin25/quiz-app',
+    //   live: 'https://jyin25.github.io/quiz-app/',
+    //   screenshot: 'Quiz app picture.png'
+    // },
     {
-      appName: 'Simpson Quiz app',
-      img: 'https://img.maximummedia.ie/joe_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE4XFxcLzAzXFxcLzA5MTIxNDAzXFxcL2hvbWVyLXNpbXBzb24uanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5pZVxcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZVxcXC9uby1pbWFnZS5wbmc_aWQ9MjY0YTJkYmUzNzBmMmM2NzVmY2RcIixcIm9wdGlvbnNcIjpbXX0iLCJoYXNoIjoiZTM1MzgwZTM4OWRjNGQyNjBhN2I0NDE3ZjdlMmM1ZWE5NDE0MjM4MyJ9/homer-simpson.jpg',
+      appName: 'Moodzic',
+      img: 'readme-image.png',
       title: 'Overview',
-      paragraph: `Simpson Quiz app is created to test your knowledge on the characters from the cartoon The Simpsons.`,
+      paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
       title2: 'Technologies Used',
-      technologies: 'HTML, CSS, jQuery',
-      alt: `Homer eating donut`,
+      technologies: 'HTML, CSS, jQuery, RESTful APIs, Javascript',
+      alt: `App interface displayed on mobile and desktop`,
       title3: 'GitHub Repo',
-      repo: 'https://github.com/jyin25/quiz-app',
-      live: 'https://jyin25.github.io/quiz-app/',
+      repo: 'https://github.com/jyin25/Moodzic',
+      live: 'https://jyin25.github.io/Moodzic/',
+      screenshot: 'Quiz app picture.png'
+    },
+    {
+      appName: 'Fit Tracker',
+      img: 'Capture_iphonexspacegrey_portrait.png',
+      title: 'Overview',
+      paragraph: `A mobile fitness App that tracks a user's weight lifting journey based on 12 weeks period.`,
+      title2: 'Technologies Used',
+      technologies: 'React, HTML/CSS, Javascript, Node.js, Express, PostgreSQL',
+      alt: `App interface displayed on mobile`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jyin25/Fitness-Tracker',
+      live: 'https://fitness-tracker.jyin25.now.sh',
       screenshot: 'Quiz app picture.png'
     }
   ],
@@ -100,7 +126,7 @@ function renderProject () {
   <h1>PORTFOLIO</h1>
   <p>CLICK ON THEM FOR MORE INFORMATION</P>
   <div class="color-line"></div>
-   ${projHtml}`);
+   <div class="project-container-flex">${projHtml}</div>`);
 }
 
 function renderContactMe () {

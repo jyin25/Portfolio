@@ -96,6 +96,7 @@
   margin-bottom: 2rem;
   padding: 2%;
   border-top-right-radius: 35px;
+  border-bottom-left-radius: 35px;
   background-color: #F2F2F2;
   width: 100%
 }
@@ -461,9 +462,13 @@
     align-items: center;
   }
 
-  .project-container img{
-    width: 100%;
-    height: 100%;
+  .project-container > img{
+    height: 13rem;
+  }
+
+  .project-container {
+    height: 12rem;
+    width: 19rem;
   }
 
   .overlay {
@@ -526,9 +531,13 @@
     align-items: center;
   }
 
-  .project-container img{
-    width: 100%;
-    height: 100%;
+  .project-container > img{
+    height: 15rem;
+  }
+
+  .project-container {
+    height: 15rem;
+    width: 23rem;
   }
 
   .overlay {
@@ -594,9 +603,13 @@
     align-items: center;
   }
 
-  .project-container img{
-    width: 100%;
-    height: 100%;
+  .project-container > img{
+    height: 270px;
+  }
+
+  .project-container {
+    height: 280px;
+    width: 500px;
   }
 
   .overlay {
@@ -669,9 +682,13 @@
     align-items: center;
   }
 
-  .project-container img{
-    width: 100%;
-    height: 100%;
+  .project-container > img{
+    height: 280px
+  }
+
+  .project-container {
+    height: 280px;
+    width: 550px;
   }
 
   .overlay {
@@ -731,12 +748,12 @@
   }
 
   .project-container {
-    width: 40%;
-    margin-top: 3rem;
+    height: 280px;
+    width: 550px;
   }
 
-  .project-container img{
-    width: 100%;
+  .project-container > img{
+    height: 280px
   }
 
   .text::after {
@@ -803,5 +820,22 @@
     font-size: 4rem;
   }
 
+  .project-container > img {
+    height: 300px;
+  }
+
+  .project-container {
+    height: 300px;
+    width: 500px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .project-container-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+  }
 
 }
