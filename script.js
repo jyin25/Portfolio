@@ -1,6 +1,6 @@
 const STORE = {
   typeFunction: {
-    typedWords: [`Front-End Developer`],
+    typedWords: [`Full-Stack Developer`],
     countIndex: 0,
     countChara: 0,
     word: '',
