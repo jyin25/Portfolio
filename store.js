@@ -49,8 +49,8 @@ const STOREHTML = {
       alt: `App interface displayed on mobile and desktop`,
       title3: 'GitHub Repo',
       repo: 'https://github.com/jyin25/Moodzic',
-      live: 'https://jyin25.github.io/Moodzic/',
-      screenshot: 'Quiz app picture.png'
+      live: 'http://www.jyin25.com',
+      screenshot: ''
     },
     {
       appName: 'Fit Tracker',
@@ -63,7 +63,7 @@ const STOREHTML = {
       title3: 'GitHub Repo',
       repo: 'https://github.com/jyin25/Fitness-Tracker',
       live: 'https://fitness-tracker.jyin25.now.sh',
-      screenshot: 'Quiz app picture.png'
+      screenshot: ''
     }
   ],
   contact: [{
@@ -115,8 +115,9 @@ function renderProject () {
             <h2>${key.title2}</h2>
             <p>${key.technologies}</p>
             <h2>${key.title3}</h2>
-            <p>${key.repo}</p>
-            <a href="${key.live}"><img src="${key.screenshot}" alt=""></a>
+            <a href="${key.repo}" style="text-decoration: none;"><p>${key.repo}<p/></a>
+            <h2>Live Demo</h2>
+            <a href="${key.live}" style="text-decoration: none;"><p>${key.live}</p></a>
       </div>
     </div>
   </div>
