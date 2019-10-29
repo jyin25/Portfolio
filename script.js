@@ -28,8 +28,8 @@ const STORE = {
 
 function clickProject () {
   $('.container').on('click', '.overlay', function () {
-    $(this).closest('.project-container').find('.modal').css('display', 'flex');
-    $(this).closest('.container').css('position', 'fixed');
+    $(this).closest('.project-container').find('.modal').css('display', 'block');
+    $(this).closest('.container').css('position', '');
   })
 };
 

@@ -1,44 +1,21 @@
 const STOREHTML = {
   navigation: ['ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'],
-  aboutMe: [
-    {
-      title: 'Education:',
-      paragraphs: [`Thinkful '19`, `<p>University of California, Santa Cruz '10 </p><span class="neutral-color">Majored in Psychology</span>`]
-    },
-    {
-      title: 'Hobbies:',
-      paragraphs: ['<span>Programing: </span><span class="neutral-color">I am result-driven and love problem solving</span>', `<span>Weighting:</span> <span class="neutral-color">Body and mind works as one, as physical strength builds mental strength</span>`]
-    },
-    {
-      title: 'Goals:',
-      paragraphs: [`<p class="neutral-color">With my font end skillset, as well as my absorption of new technologies, I strive to enhance the world as a software engineer.</p>`,
-        `<p class="neutral-color">I love learning, so I am always finding ways to improve myself and many facets of my life.</p>`,
-        `<p class="neutral-color">Above all, I would love to be a part of something that transcend personal growth.</p>`]
-    }
-  ],
   logos:
         [
           `https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png`,
           `https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png`,
           `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png`,
-          `http://pluspng.com/img-png/jquery-logo-png--512.png`,
-          `https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png`,
-          `https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/ilnk4pdjwxtt9o08tcfb`
+          `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1920px-Git-logo.svg.png`,
+          `http://pluspng.com/img-png/jquery-logo-png--512.png`        
         ],
+  logos2:
+        [
+          `https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg`,
+          `https://i.pinimg.com/originals/f3/47/70/f34770503b90f26ea389f557500ff825.png`,
+          `https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg`,
+          `https://upload.wikimedia.org/wikipedia/en/a/a9/Heroku_logo.png`,
+          `https://png2.cleanpng.com/sh/4b1bdc99c681b3cfc2441c5d4a298f49/L0KzQYm3VMI4N5Z0j5H0aYP2gLBuTf1wa5lmRdD4ZHWwesS0ivF3aaRoitt5dD32f7f7lBFzbV55feV9aX7qPbB3jb02aZY4T9YANXTpdrWAVL44OWkAUaY6MEG4QoWBVcgyQWgASakALoDxd1==/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55dffd74.7189941015248581979175.png`        ],
   projects: [
-    // {
-    //   appName: 'Simpson Quiz app',
-    //   img: 'https://img.maximummedia.ie/joe_ie/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lLm1heGltdW1tZWRpYS5pZS5zMy5hbWF6b25hd3MuY29tXFxcL3dwLWNvbnRlbnRcXFwvdXBsb2Fkc1xcXC8yMDE4XFxcLzAzXFxcLzA5MTIxNDAzXFxcL2hvbWVyLXNpbXBzb24uanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5pZVxcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZVxcXC9uby1pbWFnZS5wbmc_aWQ9MjY0YTJkYmUzNzBmMmM2NzVmY2RcIixcIm9wdGlvbnNcIjpbXX0iLCJoYXNoIjoiZTM1MzgwZTM4OWRjNGQyNjBhN2I0NDE3ZjdlMmM1ZWE5NDE0MjM4MyJ9/homer-simpson.jpg',
-    //   title: 'Overview',
-    //   paragraph: `Simpson Quiz app is created to test your knowledge on the characters from the cartoon The Simpsons.`,
-    //   title2: 'Technologies Used',
-    //   technologies: 'HTML, CSS, jQuery',
-    //   alt: `Homer eating donut`,
-    //   title3: 'GitHub Repo',
-    //   repo: 'https://github.com/jyin25/quiz-app',
-    //   live: 'https://jyin25.github.io/quiz-app/',
-    //   screenshot: 'Quiz app picture.png'
-    // },
     {
       appName: 'Moodzic',
       img: 'readme-image.png',
@@ -92,7 +69,14 @@ function renderLogo () {
     `<div class="logo">
         <img src="${x}" alt="">
             </div>`).join('');
-  const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container">${logo}</div>`;
+  const logo2 = STOREHTML.logos2.map(x =>
+    `<div class="logo">
+        <img src="${x}" alt="">
+            </div>`).join('');
+
+  const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container">${logo}</div><div class="logo-container">${logo2}</div>`;
+  
+
   $('.skills').html(logosfi);
 }
 
