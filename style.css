@@ -63,7 +63,7 @@
 
 .animation h1 {
   font-family: 'Cantata One', serif;
-  color: white;
+  color: #26262a;
   font-size: 4rem;
   margin-bottom: 3rem;
 }
@@ -192,7 +192,7 @@
 
 .text{
   font-size: 4.5rem;
-  color: white;
+  color: #26262a;
   font-family: 'Noto Serif JP', serif;
   width: 100%;
 }
@@ -460,7 +460,7 @@
   }
 
   .logo img{
-    width: 80%;
+    width: 90%;
     height: 100%;
   }
 
@@ -534,7 +534,7 @@
   }
 
   .logo img{
-    width: 80%;
+    width: 95%;
     height: 100%;
   }
 
@@ -695,7 +695,7 @@
   }
 
   .logo img{
-    width: 80%;
+    width: 95%;
     height: 100%;
   }
 

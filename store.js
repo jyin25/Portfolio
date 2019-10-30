@@ -5,7 +5,7 @@ const STOREHTML = {
           `https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png`,
           `https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png`,
           `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png`,
-          `https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Git-logo.svg/1920px-Git-logo.svg.png`,
+          `https://i.dlpng.com/static/png/2341908-git-logo-png-5-png-image-git-png-180_180_preview.webp`,
           `http://pluspng.com/img-png/jquery-logo-png--512.png`        
         ],
   logos2:
@@ -13,7 +13,7 @@ const STOREHTML = {
           `https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg`,
           `https://i.pinimg.com/originals/f3/47/70/f34770503b90f26ea389f557500ff825.png`,
           `https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg`,
-          `https://upload.wikimedia.org/wikipedia/en/a/a9/Heroku_logo.png`,
+          `https://cdn.worldvectorlogo.com/logos/heroku.svg`,
           `https://png2.cleanpng.com/sh/4b1bdc99c681b3cfc2441c5d4a298f49/L0KzQYm3VMI4N5Z0j5H0aYP2gLBuTf1wa5lmRdD4ZHWwesS0ivF3aaRoitt5dD32f7f7lBFzbV55feV9aX7qPbB3jb02aZY4T9YANXTpdrWAVL44OWkAUaY6MEG4QoWBVcgyQWgASakALoDxd1==/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55dffd74.7189941015248581979175.png`        ],
   projects: [
     {
