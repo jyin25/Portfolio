@@ -5,7 +5,7 @@ const STOREHTML = {
           `https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png`,
           `https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png`,
           `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png`,
-          `https://i.dlpng.com/static/png/2341908-git-logo-png-5-png-image-git-png-180_180_preview.webp`,
+          `https://i.dlpng.com/static/png/2341908_thumb.png`,
           `http://pluspng.com/img-png/jquery-logo-png--512.png`        
         ],
   logos2:
