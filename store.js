@@ -2,23 +2,24 @@ const STOREHTML = {
   navigation: ['ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'],
   logos:
         [
-          `https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png`,
-          `https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png`,
-          `https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png`,
-          `https://i.dlpng.com/static/png/2341908_thumb.png`,
-          `http://pluspng.com/img-png/jquery-logo-png--512.png`        
+          `/pictures/1200px-Unofficial_JavaScript_logo_2.svg (1).png`,
+          `/pictures/HTML_Logo.png`,
+          `/pictures/CSS3_logo_and_wordmark.svg.png`,
+          `/pictures/2341908_thumb.png`,
+          `/pictures/jquery-logo-png--512.png`        
         ],
   logos2:
         [
-          `https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg`,
-          `https://i.pinimg.com/originals/f3/47/70/f34770503b90f26ea389f557500ff825.png`,
-          `https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg`,
-          `https://cdn.worldvectorlogo.com/logos/heroku.svg`,
-          `https://png2.cleanpng.com/sh/4b1bdc99c681b3cfc2441c5d4a298f49/L0KzQYm3VMI4N5Z0j5H0aYP2gLBuTf1wa5lmRdD4ZHWwesS0ivF3aaRoitt5dD32f7f7lBFzbV55feV9aX7qPbB3jb02aZY4T9YANXTpdrWAVL44OWkAUaY6MEG4QoWBVcgyQWgASakALoDxd1==/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55dffd74.7189941015248581979175.png`        ],
+          `/pictures/Node.js_logo.svg`,
+          `/pictures/f34770503b90f26ea389f557500ff825.png`,
+          `/pictures/Postgresql_elephant.svg`,
+          `/pictures/heroku.svg`,
+          `/pictures/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55dffd74.7189941015248581979175.png`        
+        ],
   projects: [
     {
       appName: 'Moodzic',
-      img: 'readme-image.png',
+      img: '/pictures/readme-image.png',
       title: 'Overview',
       paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
       title2: 'Technologies Used',
@@ -31,7 +32,7 @@ const STOREHTML = {
     },
     {
       appName: 'Fit Tracker',
-      img: 'Capture_iphonexspacegrey_portrait.png',
+      img: '/pictures/mockup.PNG',
       title: 'Overview',
       paragraph: `A mobile fitness App that tracks a user's weight lifting journey based on 12 weeks period.`,
       title2: 'Technologies Used',
