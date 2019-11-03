@@ -2,19 +2,19 @@ const STOREHTML = {
   navigation: ['ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'],
   logos:
         [
-          `/pictures/1200px-Unofficial_JavaScript_logo_2.svg (1).png`,
-          `/pictures/HTML_Logo.png`,
-          `/pictures/CSS3_logo_and_wordmark.svg.png`,
-          `/pictures/2341908_thumb.png`,
-          `/pictures/jquery-logo-png--512.png`        
+          `./pictures/1200px-Unofficial_JavaScript_logo_2.svg (1).png`,
+          `./pictures/HTML_Logo.png`,
+          `./pictures/CSS3_logo_and_wordmark.svg.png`,
+          `./pictures/2341908_thumb.png`,
+          `./pictures/jquery-logo-png--512.png`        
         ],
   logos2:
         [
-          `/pictures/Node.js_logo.svg`,
-          `/pictures/f34770503b90f26ea389f557500ff825.png`,
-          `/pictures/Postgresql_elephant.svg`,
-          `/pictures/heroku.svg`,
-          `/pictures/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55dffd74.7189941015248581979175.png`        
+          `./pictures/Node.js_logo.svg`,
+          `./pictures/f34770503b90f26ea389f557500ff825.png`,
+          `./pictures/Postgresql_elephant.svg`,
+          `./pictures/heroku.svg`,
+          `./pictures/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55dffd74.7189941015248581979175.png`        
         ],
   projects: [
     {
