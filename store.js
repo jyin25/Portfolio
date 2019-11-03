@@ -19,7 +19,7 @@ const STOREHTML = {
   projects: [
     {
       appName: 'Moodzic',
-      img: '/pictures/readme-image.png',
+      img: './pictures/readme-image.png',
       title: 'Overview',
       paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
       title2: 'Technologies Used',
@@ -32,7 +32,7 @@ const STOREHTML = {
     },
     {
       appName: 'Fit Tracker',
-      img: '/pictures/mockup.PNG',
+      img: './pictures/mockup.PNG',
       title: 'Overview',
       paragraph: `A mobile fitness App that tracks a user's weight lifting journey based on 12 weeks period.`,
       title2: 'Technologies Used',
