@@ -50,22 +50,26 @@
 
 
 .animation {
-  height: 60vh;
+  height:90vh;
   background-color: #bbb;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('http://cfile215.uf.daum.net/original/1125D5014BCBDC260313EC');
-  background-size: 100% 80%;
+  background-image: url('./pictures/wallpaper.jpg');
+  background-size: cover;
   opacity: 0.9;
   flex-direction: column;
 }
 
 .animation h1 {
   font-family: 'Josefin Sans', sans-serif;
-  color: #26262a;
+  color: white;
   font-size: 4rem;
   margin-bottom: 3rem;
+}
+
+.animation > p {
+  margin-top: 10rem;
 }
 
 .about-me {
@@ -79,7 +83,7 @@
 }
 
 .about-me>h1{
-  margin-top: 1rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
   font-size: 2.5rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -194,7 +198,7 @@
 
 .text{
   font-size: 4.5rem;
-  color: #26262a;
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
   width: 100%;
 }
@@ -226,7 +230,7 @@
   font-size: 2.5rem;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 
 .icon {
@@ -274,6 +278,7 @@
 }
 
 .projects h1 {
+  margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -440,6 +445,10 @@
 
 
 @media only screen and (max-width: 399px) {
+  .animation > p {
+    margin-top: 2rem;
+  }
+
   .modal-content {
     max-height: 600px;
     max-width: 350px;
@@ -510,6 +519,10 @@
 }
 
 @media only screen and (max-width: 699px) and (min-width: 400px) {
+  .animation > p {
+    margin-top: 3rem;
+  }
+
   .modal-content {
     max-height: 600px;
     max-width: 400px;
@@ -584,6 +597,10 @@
 }
 
 @media only screen and (max-width: 899px) and (min-width: 700px) {
+  .animation > p {
+    margin-top: 4rem;
+  }
+
   .modal-content {
     max-height: 600px;
     max-width: 500px;
@@ -662,6 +679,10 @@
 }
 
 @media only screen and (max-width: 1100px) and (min-width: 900px) {
+  .animation > p {
+    margin-top: 4rem;
+  }
+
   .modal-content {
     max-height: 800px;
     max-width: 600px;
@@ -745,6 +766,10 @@
 }
 
 @media only screen and (max-width: 1500px) and (min-width: 1101px) {
+  .animation > p {
+    margin-top: 5rem;
+  }
+
   .neutral-color {
     font-size: 1.3rem;
   }

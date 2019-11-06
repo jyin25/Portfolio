@@ -1,6 +1,6 @@
 const STORE = {
   typeFunction: {
-    typedWords: [`Full-Stack Developer`],
+    typedWords: [`FULL-STACK DEVELOPER`, 'E-SPORTS ENTHUSIAST', 'PET LOVER', 'FOODIE'],
     countIndex: 0,
     countChara: 0,
     word: '',
@@ -23,7 +23,7 @@ const STORE = {
     selectTypeFunc.countIndex++;
     selectTypeFunc.countChara = 0;
   }
-  setTimeout(type, 250);
+  setTimeout(type, 200);
 })();
 
 function clickProject () {
