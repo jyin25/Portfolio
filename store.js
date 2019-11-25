@@ -46,7 +46,7 @@ const STOREHTML = {
     },
     {
       appName: 'Fantasy Stock Exchange',
-      img: './pictures/mockup3.PNG',
+      img: './pictures/mockup3.png',
       title: 'Overview',
       paragraph: `Fantasy Stock Exchange is a stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
       title2: 'Technologies Used',
