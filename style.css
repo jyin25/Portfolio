@@ -242,10 +242,12 @@
   height: 100%;
 }
 
+.app-name {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #334E68;
+}
 
 .projects {
-  padding-left: 5%;
-  padding-right: 5%;
   padding-top: 1rem;
   padding-bottom: 4rem;
   display: flex;
@@ -264,6 +266,8 @@
   position: relative;
   margin-top: 2rem;
   border-radius: 5%;
+  margin-right: .5rem;
+  margin-left: .5rem;
 }
 
 .box-shadow {
@@ -440,6 +444,14 @@
 .modal-text img {
   width: 25rem;
   height: 25rem;
+}
+
+.project-container-flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+  flex-flow: wrap;
 }
 
 
@@ -880,13 +892,6 @@
     width: 500px;
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  .project-container-flex {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 100%;
   }
 
 }

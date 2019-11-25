@@ -43,6 +43,19 @@ const STOREHTML = {
       repo: 'https://github.com/jyin25/Fitness-Tracker',
       live: 'https://fitness-tracker.jyin25.now.sh',
       screenshot: ''
+    },
+    {
+      appName: 'Fantasy Stock Exchange',
+      img: './pictures/mockup3.PNG',
+      title: 'Overview',
+      paragraph: `Fantasy Stock Exchange is a stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
+      title2: 'Technologies Used',
+      technologies: 'React, HTML/CSS, Javascript, Node.js, Express, PostgreSQL, Vicotry Graph',
+      alt: `App interface displayed on mobile`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jy-lr/FSE-Client',
+      live: 'https://fantasy-stock-exchange.jyin25.now.sh/',
+      screenshot: ''
     }
   ],
   contact: [{
@@ -84,6 +97,7 @@ function renderLogo () {
 
 function renderProject () {
   const projHtml = STOREHTML.projects.map(key => `
+  <div>
   <div class="project-container box-shadow">
   <img src=${key.img} alt="${key.alt}">
   <div class="overlay">
@@ -107,7 +121,11 @@ function renderProject () {
       </div>
     </div>
   </div>
-  </div>`).join('');
+  </div>
+  <br>
+  <div class="app-name">${key.appName}</div>
+  </div>
+  `).join('');
 
   $('.projects').html(`
   <h1>PORTFOLIO</h1>
