@@ -28,7 +28,7 @@ const STOREHTML = {
       title3: 'GitHub Repo',
       repo: 'https://github.com/jyin25/Moodzic',
       live: 'http://www.jyin25.com',
-      screenshot: `./pictures/git.gif`
+      screenshot: `./pictures/moodzic.gif`
     },
     {
       appName: 'Fit Tracker',
@@ -40,8 +40,8 @@ const STOREHTML = {
       alt: `App interface displayed on mobile`,
       title3: 'GitHub Repo',
       repo: 'https://github.com/jyin25/Fitness-Tracker',
-      live: 'https://fitness-tracker.jyin25.now.sh',
-      screenshot: ''
+      live: 'https://fitness-tracker-master.jyin25.now.sh',
+      screenshot: `./pictures/fit-tracker.gif`
     },
     {
       appName: 'Fantasy Stock Exchange',
@@ -53,8 +53,8 @@ const STOREHTML = {
       alt: `App interface displayed on mobile`,
       title3: 'GitHub Repo',
       repo: 'https://github.com/jy-lr/FSE-Client',
-      live: 'https://fantasy-stock-exchange.jyin25.now.sh/',
-      screenshot: ''
+      live: 'https://fse-client.jyin25.now.sh/',
+      screenshot: `./pictures/FSE.gif`
     }
   ],
   contact: [{
@@ -99,7 +99,7 @@ function renderProject () {
   <div class="project-flex">
     <div class="project-container box-shadow">
       <img src=${key.img} alt="${key.alt}">
-      <div class="overlay">
+      <div class="overlay hover">
         <p>${key.appName}</p>
       </div>
       <div class="modal">
@@ -113,7 +113,7 @@ function renderProject () {
           <p>${key.paragraph}</p>
           <h2>${key.title3}</h2>
           <a href="${key.repo}" style="text-decoration: none;"><p>${key.repo}<p/></a>
-          <h2>Live Demo</h2>
+          <h2>Live App</h2>
           <a href="${key.live}" style="text-decoration: none;"><p>${key.live}</p></a>
           <img src=${key.screenshot} style="width: auto">
           </div>
@@ -140,9 +140,9 @@ function renderProject () {
 
 function renderContactMe () {
   const contactHtml = STOREHTML.contact.map(key => `
-  <li><a href="mailto:jyin25@gmail.com"><img src=${key.email} alt=""></a></li>
-  <li><a href="https://www.linkedin.com/in/jun-yin-883636180/"><img src=${key.linkedin} alt=""></a></li>
-  <li><a href="https://github.com/jyin25"><img src=${key.github} alt=""></a></li>`);
+  <li class="hover"><a href="mailto:jyin25@gmail.com"><img src=${key.email} alt=""></a></li>
+  <li class="hover"><a href="https://www.linkedin.com/in/jun-yin-883636180/"><img src=${key.linkedin} alt=""></a></li>
+  <li class="hover"><a href="https://github.com/jyin25"><img src=${key.github} alt=""></a></li>`);
 
   $('.contact').html(`<h1>CONNECT WITH ME!</h1><ul>${contactHtml} </ul>`);
 }
