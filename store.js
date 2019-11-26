@@ -2,19 +2,19 @@ const STOREHTML = {
   navigation: ['ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'],
   logos:
         [
-          `./pictures/1200px-Unofficial_JavaScript_logo_2.svg (1).png`,
-          `./pictures/HTML_Logo.png`,
-          `./pictures/CSS3_logo_and_wordmark.svg.png`,
-          `./pictures/2341908_thumb.png`,
-          `./pictures/jquery-logo-png--512.png`        
+          `<i class="fab fa-js-square" style="color:yellow"></i>`,
+          `<i class="fab fa-html5" style="color:#e54d26"></i>`,
+          `<i class="fab fa-css3-alt" style="color:#3d8fc6"></i>`,
+          `<i class="fab fa-git-square" style="color: #f34f29"></i>`,
+          `<i class="icon-jquery" style="color:blue"></i>`
         ],
   logos2:
         [
-          `./pictures/Node.js_logo.svg`,
-          `./pictures/f34770503b90f26ea389f557500ff825.png`,
-          `./pictures/Postgresql_elephant.svg`,
-          `./pictures/heroku.svg`,
-          `./pictures/kisspng-mocha-node-js-javascript-software-testing-npm-5ae37d55dffd74.7189941015248581979175.png`        
+          `<i class="fab fa-node-js" style="color:green"></i>`,
+          `<i class="fab fa-react" style="color:#5249dc"></i>`,
+          `<i class="icon-postgres" style="color:#336791"></i>`,
+          `<i class="icon-heroku" style="color:blue"></i>`,
+          `<i class="icon-npm" style="color:red"></i>`        
         ],
   projects: [
     {
@@ -23,13 +23,12 @@ const STOREHTML = {
       title: 'Overview',
       paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
       title2: 'Technologies Used',
-      technologies: 'HTML, CSS, jQuery, RESTful APIs, Javascript',
-      technologiesUsed: [`./pictures/1200px-Unofficial_JavaScript_logo_2.svg (1).png`, `./pictures/HTML_Logo.png`, `./pictures/CSS3_logo_and_wordmark.svg.png`,`./pictures/jquery-logo-png--512.png`],
+      technologies: 'HTML5 | CSS3 | jQuery | RESTful APIs | Javascript',
       alt: `App interface displayed on mobile and desktop`,
       title3: 'GitHub Repo',
       repo: 'https://github.com/jyin25/Moodzic',
       live: 'http://www.jyin25.com',
-      screenshot: ''
+      screenshot: `./pictures/git.gif`
     },
     {
       appName: 'Fit Tracker',
@@ -37,7 +36,7 @@ const STOREHTML = {
       title: 'Overview',
       paragraph: `A mobile fitness App that tracks a user's weight lifting journey based on 12 weeks period.`,
       title2: 'Technologies Used',
-      technologies: 'React, HTML/CSS, Javascript, Node.js, Express, PostgreSQL',
+      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL',
       alt: `App interface displayed on mobile`,
       title3: 'GitHub Repo',
       repo: 'https://github.com/jyin25/Fitness-Tracker',
@@ -50,7 +49,7 @@ const STOREHTML = {
       title: 'Overview',
       paragraph: `Fantasy Stock Exchange is a stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
       title2: 'Technologies Used',
-      technologies: 'React, HTML/CSS, Javascript, Node.js, Express, PostgreSQL, Vicotry Graph',
+      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL | Victory Graph',
       alt: `App interface displayed on mobile`,
       title3: 'GitHub Repo',
       repo: 'https://github.com/jy-lr/FSE-Client',
@@ -82,12 +81,12 @@ function renderAboutMe () {
 function renderLogo () {
   const logo = STOREHTML.logos.map(x =>
     `<div class="logo">
-        <img src="${x}" alt="">
-            </div>`).join('');
+        ${x}
+      </div>`).join('');
   const logo2 = STOREHTML.logos2.map(x =>
     `<div class="logo">
-        <img src="${x}" alt="">
-            </div>`).join('');
+      ${x}
+    </div>`).join('');
 
   const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container">${logo}</div><div class="logo-container">${logo2}</div>`;
   
@@ -97,33 +96,38 @@ function renderLogo () {
 
 function renderProject () {
   const projHtml = STOREHTML.projects.map(key => `
-  <div>
-  <div class="project-container box-shadow">
-  <img src=${key.img} alt="${key.alt}">
-  <div class="overlay">
-  <p>${key.appName}</p>
-  </div>
-  <div class="modal">
-    <div class="modal-content">
-    <div class="button-container">
-    <div class="close">+</div>
-  </div>
-      <div class="modal-text">
-            <h1>${key.appName}</h1>
-            <h2>${key.title}</h2>
-            <p>${key.paragraph}</p>
-            <h2>${key.title2}</h2>
-            <p>${key.technologies}</p>
-            <h2>${key.title3}</h2>
-            <a href="${key.repo}" style="text-decoration: none;"><p>${key.repo}<p/></a>
-            <h2>Live Demo</h2>
-            <a href="${key.live}" style="text-decoration: none;"><p>${key.live}</p></a>
+  <div class="project-flex">
+    <div class="project-container box-shadow">
+      <img src=${key.img} alt="${key.alt}">
+      <div class="overlay">
+        <p>${key.appName}</p>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+        <div class="button-container">
+          <div class="close">+</div>
+        </div>
+        <div class="modal-text">
+          <h1>${key.appName}</h1>
+          <h2>${key.title}</h2>
+          <p>${key.paragraph}</p>
+          <h2>${key.title3}</h2>
+          <a href="${key.repo}" style="text-decoration: none;"><p>${key.repo}<p/></a>
+          <h2>Live Demo</h2>
+          <a href="${key.live}" style="text-decoration: none;"><p>${key.live}</p></a>
+          <img src=${key.screenshot} style="width: auto">
+          </div>
       </div>
     </div>
   </div>
-  </div>
   <br>
-  <div class="app-name">${key.appName}</div>
+  <div class="app-name">
+    <h2>${key.appName}</h2>
+    <br>
+    <p>Tech stacks</p>
+    <p class="tech-stacks">${key.technologies}</p>
+    </div>
+  
   </div>
   `).join('');
 
