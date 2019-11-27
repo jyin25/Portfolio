@@ -115,7 +115,7 @@ function renderProject () {
           <a href="${key.repo}" style="text-decoration: none;"><p>${key.repo}<p/></a>
           <h2>Live App</h2>
           <a href="${key.live}" style="text-decoration: none;"><p>${key.live}</p></a>
-          <img src=${key.screenshot} style="width: auto">
+          <img src=${key.screenshot}>
           </div>
       </div>
     </div>

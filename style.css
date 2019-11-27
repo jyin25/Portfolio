@@ -414,7 +414,6 @@ i {
   position: relative;
   border-radius: 5px;
   background-color: white;
-  padding-bottom: 4rem;
 }
 
 .close {
@@ -430,6 +429,7 @@ i {
   margin-top: 5rem;
   padding-right: 10%;
   padding-left: 10%;
+  padding-bottom: 1.5rem;
 }
 
 .hover {
@@ -469,7 +469,6 @@ i {
 }
 
 .modal-text img {
-  width: 25rem;
   height: 25rem;
 }
 
@@ -544,8 +543,8 @@ i {
   }
 
   .modal-text img {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 8rem;
   }
 
 .modal-text h1 {
@@ -554,6 +553,7 @@ i {
 
 .modal-text h2 {
   font-size: 1.3rem;
+  margin-top: 0;
   }
 
 .modal-text p {
@@ -630,8 +630,8 @@ i {
   }
 
   .modal-text img {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 10rem;
   }
 
 .modal-text h1 {
@@ -654,6 +654,10 @@ i {
 @media only screen and (max-width: 899px) and (min-width: 700px) {
   .animation > p {
     margin-top: 4rem;
+  }
+
+  .modal-text {
+    padding-bottom: 1rem;
   }
 
   .modal-content {
@@ -711,8 +715,8 @@ i {
   }
 
   .modal-text img {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 10rem;
   }
 
   .modal-text h1 {
@@ -803,7 +807,7 @@ i {
   }
 
   .modal-text img {
-    width: 20rem;
+    width: 25rem;
     height: 20rem;
   }
 
@@ -876,8 +880,7 @@ i {
   }
 
   .modal-text img {
-    width: 25rem;
-    height: 25rem;
+    height: 20rem;
   }
 
     .modal-text h1 {
@@ -939,6 +942,10 @@ i {
     width: 500px;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .modal-text img {
+    height: 20rem;
   }
 
 }
