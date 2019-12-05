@@ -18,17 +18,17 @@ const STOREHTML = {
         ],
   projects: [
     {
-      appName: 'Moodzic',
-      img: './pictures/readme-image.png',
+      appName: 'Fantasy Stock Exchange',
+      img: './pictures/mockup3.png',
       title: 'Overview',
-      paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
+      paragraph: `Fantasy Stock Exchange is a stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
       title2: 'Technologies Used',
-      technologies: 'HTML5 | CSS3 | jQuery | RESTful APIs | Javascript',
-      alt: `App interface displayed on mobile and desktop`,
+      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL | Victory Graph',
+      alt: `App interface displayed on mobile`,
       title3: 'GitHub Repo',
-      repo: 'https://github.com/jyin25/Moodzic',
-      live: 'http://www.jyin25.com',
-      screenshot: `./pictures/moodzic.gif`
+      repo: 'https://github.com/jy-lr/FSE-Client',
+      live: 'https://fse-client.jyin25.now.sh/',
+      screenshot: `./pictures/FSE.gif`
     },
     {
       appName: 'Fit Tracker',
@@ -44,17 +44,17 @@ const STOREHTML = {
       screenshot: `./pictures/fit-tracker.gif`
     },
     {
-      appName: 'Fantasy Stock Exchange',
-      img: './pictures/mockup3.png',
+      appName: 'Moodzic',
+      img: './pictures/readme-image.png',
       title: 'Overview',
-      paragraph: `Fantasy Stock Exchange is a stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
+      paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
       title2: 'Technologies Used',
-      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL | Victory Graph',
-      alt: `App interface displayed on mobile`,
+      technologies: 'HTML5 | CSS3 | jQuery | RESTful APIs | Javascript',
+      alt: `App interface displayed on mobile and desktop`,
       title3: 'GitHub Repo',
-      repo: 'https://github.com/jy-lr/FSE-Client',
-      live: 'https://fse-client.jyin25.now.sh/',
-      screenshot: `./pictures/FSE.gif`
+      repo: 'https://github.com/jyin25/Moodzic',
+      live: 'http://www.jyin25.com',
+      screenshot: `./pictures/moodzic.gif`
     }
   ],
   contact: [{
@@ -109,12 +109,12 @@ function renderProject () {
         </div>
         <div class="modal-text">
           <h1>${key.appName}</h1>
-          <h2>${key.title}</h2>
-          <p>${key.paragraph}</p>
+          <h2>Tech Stack</h2>
+          <p>${key.technologies}</p>
           <h2>${key.title3}</h2>
-          <a href="${key.repo}" style="text-decoration: none;"><p>${key.repo}<p/></a>
+          <a href="${key.repo}" style="text-decoration: none;" target="_blank"><p>${key.repo}<p/></a>
           <h2>Live App</h2>
-          <a href="${key.live}" style="text-decoration: none;"><p>${key.live}</p></a>
+          <a href="${key.live}" style="text-decoration: none;" target="_blank"><p>${key.live}</p></a>
           <img src=${key.screenshot}>
           </div>
       </div>
@@ -124,8 +124,7 @@ function renderProject () {
   <div class="app-name">
     <h2>${key.appName}</h2>
     <br>
-    <p>Tech stacks</p>
-    <p class="tech-stacks">${key.technologies}</p>
+    <p class="description">${key.paragraph}</p>
     </div>
   
   </div>
