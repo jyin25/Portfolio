@@ -18,32 +18,6 @@ const STOREHTML = {
         ],
   projects: [
     {
-      appName: 'Fantasy Stock Exchange',
-      img: './pictures/mockup3.png',
-      title: 'Overview',
-      paragraph: `Fantasy Stock Exchange is a stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
-      title2: 'Technologies Used',
-      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL | Victory Graph',
-      alt: `App interface displayed on mobile`,
-      title3: 'GitHub Repo',
-      repo: 'https://github.com/jy-lr/FSE-Client',
-      live: 'https://fse-client.jyin25.now.sh/',
-      screenshot: `./pictures/FSE.gif`
-    },
-    {
-      appName: 'Fit Tracker',
-      img: './pictures/mockup.PNG',
-      title: 'Overview',
-      paragraph: `A mobile fitness App that tracks a user's weight lifting journey based on 12 weeks period.`,
-      title2: 'Technologies Used',
-      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL',
-      alt: `App interface displayed on mobile`,
-      title3: 'GitHub Repo',
-      repo: 'https://github.com/jyin25/Fitness-Tracker',
-      live: 'https://fitness-tracker-master.jyin25.now.sh',
-      screenshot: `./pictures/fit-tracker.gif`
-    },
-    {
       appName: 'Moodzic',
       img: './pictures/readme-image.png',
       title: 'Overview',
@@ -55,12 +29,38 @@ const STOREHTML = {
       repo: 'https://github.com/jyin25/Moodzic',
       live: 'http://www.jyin25.com',
       screenshot: `./pictures/moodzic.gif`
+    },
+    {
+      appName: 'Fit Tracker',
+      img: './pictures/mockup.PNG',
+      title: 'Overview',
+      paragraph: `A fitness app that allows users to save custom exercises all while keeping track of how much they lift.`,
+      title2: 'Technologies Used',
+      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL',
+      alt: `App interface displayed on mobile`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jyin25/Fitness-Tracker',
+      live: 'https://fitness-tracker-master.jyin25.now.sh',
+      screenshot: `./pictures/fit-tracker.gif`
+    },
+    {
+      appName: 'Fantasy Stock Exchange',
+      img: './pictures/mockup3.png',
+      title: 'Overview',
+      paragraph: `A stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
+      title2: 'Technologies Used',
+      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL | Victory Graph',
+      alt: `App interface displayed on mobile`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jy-lr/FSE-Client',
+      live: 'https://fse-client.jyin25.now.sh/',
+      screenshot: `./pictures/FSE.gif`
     }
   ],
   contact: [{
-    email: `http://pngimg.com/uploads/gmail_logo/gmail_logo_PNG1.png`,
-    linkedin: `https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png`,
-    github: `https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png`
+    email: `<i class="fas fa-envelope-square" style="color:#22d7e0"></i>`,
+    linkedin: `<i class="fab fa-linkedin" style="color:#4B11A8"></i>`,
+    github: `<i class="fab fa-github-square" style="color:rgb(240, 81, 51)"></i>`
   }]
 };
 
@@ -108,13 +108,9 @@ function renderProject () {
           <div class="close">+</div>
         </div>
         <div class="modal-text">
-          <h1>${key.appName}</h1>
-          <h2>Tech Stack</h2>
-          <p>${key.technologies}</p>
-          <h2>${key.title3}</h2>
-          <a href="${key.repo}" style="text-decoration: none;" target="_blank"><p>${key.repo}<p/></a>
-          <h2>Live App</h2>
-          <a href="${key.live}" style="text-decoration: none;" target="_blank"><p>${key.live}</p></a>
+          <br>
+          <h2>${key.appName}</h2>
+          <br>
           <img src=${key.screenshot}>
           </div>
       </div>
@@ -124,7 +120,9 @@ function renderProject () {
   <div class="app-name">
     <h2>${key.appName}</h2>
     <br>
-    <p class="description">${key.paragraph}</p>
+    <p class="descriptions">${key.paragraph}</p>
+    <p class="tech-stacks">${key.technologies}</p>
+    <p><span><a href=${key.live} target="_blank">Live</a></span>   |   <span><a href=${key.repo} target="_blank">Github</a></span></p>
     </div>
   
   </div>
@@ -132,16 +130,16 @@ function renderProject () {
 
   $('.projects').html(`
   <h1>PORTFOLIO</h1>
-  <p>CLICK ON THEM FOR MORE INFORMATION</P>
+  <p class="more-info">CLICK ON PICTURE TO SEE DEMO</P>
   <div class="color-line"></div>
    <div class="project-container-flex">${projHtml}</div>`);
 }
 
 function renderContactMe () {
   const contactHtml = STOREHTML.contact.map(key => `
-  <li class="hover"><a href="mailto:jyin25@gmail.com"><img src=${key.email} alt=""></a></li>
-  <li class="hover"><a href="https://www.linkedin.com/in/jun-yin-883636180/"><img src=${key.linkedin} alt=""></a></li>
-  <li class="hover"><a href="https://github.com/jyin25"><img src=${key.github} alt=""></a></li>`);
+  <li class="hover footer-icon"><a href="mailto:jyin25@gmail.com" target="_blank">${key.email}</a></li>
+  <li class="hover footer-icon"><a href="https://www.linkedin.com/in/jun-yin-883636180/" target="_blank">${key.linkedin}</a></li>
+  <li class="hover footer-icon"><a href="https://github.com/jyin25" target="_blank">${key.github}</a></li>`);
 
   $('.contact').html(`<h1>CONNECT WITH ME!</h1><ul>${contactHtml} </ul>`);
 }
