@@ -38,6 +38,8 @@ i {
 
 .tech-stacks {
   font-size: 14px;
+  padding-right: .5rem;
+  padding-left: .5rem;
 }
 
 .project-flex {
@@ -324,6 +326,8 @@ i {
 
 .descriptions {
   color: #3b89a0;
+  padding-right: .5rem;
+  padding-left: .5rem;
 }
 
 .overlay {
@@ -417,6 +421,8 @@ i {
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  padding-left: .8rem;
+  padding-right: .8rem;
 }
 
 .modal-content {
@@ -443,8 +449,6 @@ i {
   height: 100%;
   width: 100%;
   margin-top: 5rem;
-  padding-right: 10%;
-  padding-left: 10%;
 }
 
 .button-container {
@@ -540,7 +544,7 @@ i {
 
 .project-container {
   height: 12rem;
-  width: 19rem;
+  width: 18rem;
 }
 
 .overlay {
@@ -565,7 +569,7 @@ font-size: .8rem;
   font-size: 2rem;
 }
 
-@media only screen and (max-width: 699px) and (min-width: 400px) {
+@media only screen and (min-width: 400px) {
   .animation > p {
     margin-top: 3rem;
   }
@@ -651,7 +655,7 @@ font-size: .8rem;
   }
 }
 
-@media only screen and (max-width: 899px) and (min-width: 700px) {
+@media only screen and (min-width: 700px) {
   .animation > p {
     margin-top: 4rem;
   }
@@ -737,7 +741,7 @@ font-size: .8rem;
 
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 900px) {
+@media only screen and (min-width: 900px) {
   .animation > p {
     margin-top: 4rem;
   }
@@ -832,7 +836,7 @@ font-size: .8rem;
   }
 }
 
-@media only screen and (max-width: 1500px) and (min-width: 1101px) {
+@media only screen and (min-width: 1101px) {
   .descriptions {
     font-size: 1.1rem;
   }
