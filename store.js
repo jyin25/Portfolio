@@ -31,19 +31,6 @@ const STOREHTML = {
       screenshot: `./pictures/FSE.gif`
     },
     {
-      appName: 'Moodzic',
-      img: './pictures/readme-image.png',
-      title: 'Overview',
-      paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
-      title2: 'Technologies Used',
-      technologies: 'HTML5 | CSS3 | jQuery | RESTful APIs | Javascript',
-      alt: `App interface displayed on mobile and desktop`,
-      title3: 'GitHub Repo',
-      repo: 'https://github.com/jyin25/Moodzic',
-      live: 'http://www.jyin25.com',
-      screenshot: `./pictures/moodzic.gif`
-    },
-    {
       appName: 'Fit Tracker',
       img: './pictures/mockup.PNG',
       title: 'Overview',
@@ -55,6 +42,19 @@ const STOREHTML = {
       repo: 'https://github.com/jyin25/Fitness-Tracker',
       live: 'https://fitness-tracker-master.jyin25.now.sh',
       screenshot: `./pictures/fit-tracker.gif`
+    },
+    {
+      appName: 'Moodzic',
+      img: './pictures/readme-image.png',
+      title: 'Overview',
+      paragraph: `A weather based music player app that curates a specific playlist and recommendations for activities based on the user’s current weather condition.`,
+      title2: 'Technologies Used',
+      technologies: 'HTML5 | CSS3 | jQuery | RESTful APIs | Javascript',
+      alt: `App interface displayed on mobile and desktop`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jyin25/Moodzic',
+      live: 'http://www.jyin25.com',
+      screenshot: `./pictures/moodzic.gif`
     }
   ],
   contact: [{
