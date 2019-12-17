@@ -18,6 +18,19 @@ const STOREHTML = {
         ],
   projects: [
     {
+      appName: 'Fantasy Stock Exchange',
+      img: './pictures/mockup3.png',
+      title: 'Overview',
+      paragraph: `A stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
+      title2: 'Technologies Used',
+      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL | Victory Graph',
+      alt: `App interface displayed on mobile`,
+      title3: 'GitHub Repo',
+      repo: 'https://github.com/jy-lr/FSE-Client',
+      live: 'https://fantasy-stock-exchange.jyin25.now.sh/',
+      screenshot: `./pictures/FSE.gif`
+    },
+    {
       appName: 'Moodzic',
       img: './pictures/readme-image.png',
       title: 'Overview',
@@ -42,19 +55,6 @@ const STOREHTML = {
       repo: 'https://github.com/jyin25/Fitness-Tracker',
       live: 'https://fitness-tracker-master.jyin25.now.sh',
       screenshot: `./pictures/fit-tracker.gif`
-    },
-    {
-      appName: 'Fantasy Stock Exchange',
-      img: './pictures/mockup3.png',
-      title: 'Overview',
-      paragraph: `A stock trading app that allows users to learn the principles of trading stocks, all while having fun competing with friends.`,
-      title2: 'Technologies Used',
-      technologies: 'React | HTML5 | CSS3 | Javascript | Node.js | Express | PostgreSQL | Victory Graph',
-      alt: `App interface displayed on mobile`,
-      title3: 'GitHub Repo',
-      repo: 'https://github.com/jy-lr/FSE-Client',
-      live: 'https://fse-client.jyin25.now.sh/',
-      screenshot: `./pictures/FSE.gif`
     }
   ],
   contact: [{
