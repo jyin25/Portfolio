@@ -54,7 +54,7 @@ const STOREHTML = {
       alt: `App interface displayed on mobile`,
       title3: 'GitHub Repo',
       repo: 'https://github.com/jy-lr/FSE-Client',
-      live: 'https://fantasy-stock-exchange.jyin25.now.sh/',
+      live: 'https://fse-client.now.sh/',
       screenshot: `./pictures/FSE.gif`
     },
     {
