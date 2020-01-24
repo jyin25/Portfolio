@@ -2,19 +2,46 @@ const STOREHTML = {
   navigation: ['ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT'],
   logos:
         [
-          `<i class="fab fa-js-square" style="color:yellow"></i>`,
-          `<i class="fab fa-html5" style="color:#e54d26"></i>`,
-          `<i class="fab fa-css3-alt" style="color:#3d8fc6"></i>`,
-          `<i class="fab fa-git-square" style="color: #f34f29"></i>`,
-          `<i class="icon-jquery" style="color:blue"></i>`
-        ],
-  logos2:
-        [
-          `<i class="fab fa-node-js" style="color:green"></i>`,
-          `<i class="fab fa-react" style="color:#5249dc"></i>`,
-          `<i class="icon-postgres" style="color:#336791"></i>`,
-          `<i class="icon-heroku" style="color:blue"></i>`,
-          `<i class="icon-npm" style="color:red"></i>`        
+          {
+            icon: `<i class="fab fa-js-square" style="color:yellow;font-size: 5rem"></i>`,
+            description: "<p>Javascript</p>"
+          },
+          {
+            icon: `<i class="fab fa-html5" style="color:#e54d26;font-size: 5rem"></i>`,
+            description: "<p>HTML5</p>"
+          },
+          {
+            icon: `<i class="fab fa-css3-alt" style="color:#3d8fc6;font-size: 5rem"></i>`,
+            description: "<p>CSS</p>"
+          },
+          {
+            icon: `<i class="fab fa-git-square" style="color: #f34f29;font-size: 5rem"></i>`,
+            description: "<p>Git</p>"
+          },
+          {
+            icon: `<i class="icon-jquery" style="color:blue;font-size: 5rem"></i>`,
+            description: "<p>jQuery</p>"
+          },
+          {
+            icon: `<i class="fab fa-node-js" style="color:green;font-size: 5rem"></i>`,
+            description: "<p>Node.js</p>"
+          },
+          {
+            icon: `<i class="fab fa-react" style="color:#5249dc;font-size: 5rem"></i>`,
+            description: "<p>React</p>"
+          },
+          {
+            icon: `<i class="icon-postgres" style="color:#336791;font-size: 5rem"></i>`,
+            description: "<p>Postgres</p>"
+          },
+          {
+            icon: `<i class="icon-heroku" style="color:blue;font-size: 5rem"></i>`,
+            description: "<p>Heroku</p>"
+          },
+          {
+            icon: `<i class="icon-npm" style="color:red;font-size: 5rem"></i>`,
+            description: "<p>NPM</p>"
+          }
         ],
   projects: [
     {
@@ -81,14 +108,13 @@ function renderAboutMe () {
 function renderLogo () {
   const logo = STOREHTML.logos.map(x =>
     `<div class="logo">
-        ${x}
+      <div class="icon-spacing">
+        ${x.icon}
+      </div>
+        <div class="logo-text">${x.description}</div>
       </div>`).join('');
-  const logo2 = STOREHTML.logos2.map(x =>
-    `<div class="logo">
-      ${x}
-    </div>`).join('');
 
-  const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container">${logo}</div><div class="logo-container">${logo2}</div>`;
+  const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container">${logo}</div>`;
   
 
   $('.skills').html(logosfi);
