@@ -12,7 +12,9 @@
   <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.css">
   <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.min.css">
   <link rel="stylesheet" href="./font-mfizz-2.4.1/font-mfizz.css">
-  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <title>Jun Yin: Portfolio</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
     <section class="about-me" id="ABOUT">
       <h1>ABOUT</h1>
       <div class="color-line"></div>
-      <div class="flex-container">
+      <div class="flex-container" data-aos="fade-down">
         <div class="about-me-container">
           <h1>Education:</h1>
           <div class="color-line"></div>
@@ -56,20 +58,26 @@
       </div>
     </section>
 
-    <section class="skills" id="SKILLS"></section>
+    <section class="skills" id="SKILLS">
+    </section>
  
     <section class="projects" id="PROJECTS">
   
 
     </section>
       
-    <footer class="contact" id="CONTACT"></footer>
+    <footer class="contact" id="CONTACT">
+      <p>© Copyright 2019 | Designed & Coded by Nathan Szelag</p>
+    </footer>
   </div>
   
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="script.js"></script>
   <script src="store.js"></script>
+  <script>
+    AOS.init({duration: 1200,});
+  </script>
 
 
 </body>

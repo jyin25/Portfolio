@@ -12,14 +12,14 @@ const STOREHTML = {
           },
           {
             icon: `<i class="fab fa-css3-alt" style="color:#3d8fc6;font-size: 5rem"></i>`,
-            description: "<p>CSS</p>"
+            description: "<p>CSS3</p>"
           },
           {
             icon: `<i class="fab fa-git-square" style="color: #f34f29;font-size: 5rem"></i>`,
             description: "<p>Git</p>"
           },
           {
-            icon: `<i class="icon-jquery" style="color:blue;font-size: 5rem"></i>`,
+            icon: `<i class="icon-jquery" style="color:#6995e4;font-size: 5rem"></i>`,
             description: "<p>jQuery</p>"
           },
           {
@@ -35,7 +35,7 @@ const STOREHTML = {
             description: "<p>Postgres</p>"
           },
           {
-            icon: `<i class="icon-heroku" style="color:blue;font-size: 5rem"></i>`,
+            icon: `<i class="icon-heroku" style="color:#6995e4;font-size: 5rem"></i>`,
             description: "<p>Heroku</p>"
           },
           {
@@ -85,9 +85,9 @@ const STOREHTML = {
     }
   ],
   contact: [{
-    email: `<i class="fas fa-envelope-square" style="color:#22d7e0"></i>`,
-    linkedin: `<i class="fab fa-linkedin" style="color:#4B11A8"></i>`,
-    github: `<i class="fab fa-github-square" style="color:rgb(240, 81, 51)"></i>`
+    email: `<i class="fas fa-envelope-square" style="color:#ddad6b"></i>`,
+    linkedin: `<i class="fab fa-linkedin" style="color:#ddad6b"></i>`,
+    github: `<i class="fab fa-github-square" style="color:#ddad6b"></i>`
   }]
 };
 
@@ -114,7 +114,7 @@ function renderLogo () {
         <div class="logo-text">${x.description}</div>
       </div>`).join('');
 
-  const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container">${logo}</div>`;
+  const logosfi = `<h1>Skills</h1> <div class="color-line"></div> <div class="logo-container" data-aos="fade-right">${logo}</div>`;
   
 
   $('.skills').html(logosfi);
